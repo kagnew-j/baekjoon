@@ -6,3 +6,5 @@ di = {}
 for i in li:
     di[i] = di.get(i,0) + 1
 print(" ".join([str(di[ele]) if ele in di else '0' for ele in li2]))
+
+# https://www.acmicpc.net/problem/10816

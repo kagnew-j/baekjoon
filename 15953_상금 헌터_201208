@@ -1,0 +1,37 @@
+def solve(x,y):
+    if x < 1:
+        a = 0
+    elif x < 2:
+        a = 5000000
+    elif x < 4:
+        a = 3000000
+    elif x < 7:
+        a = 2000000
+    elif x < 11:
+        a = 500000
+    elif x < 16:
+        a = 300000
+    elif x < 22:
+        a = 100000
+    else:
+        a = 0
+    if y < 1:
+        b = 0
+    elif y < 2:
+        b = 5120000
+    elif y < 4:
+        b = 2560000
+    elif y < 8:
+        b = 1280000
+    elif y < 16:
+        b = 640000
+    elif y < 32:
+        b = 320000
+    else:
+        b = 0
+    return a+b
+for _ in range(int(input())):
+    a,b = map(int,input().split())
+    print(solve(a,b))
+
+# https://www.acmicpc.net/problem/15953
